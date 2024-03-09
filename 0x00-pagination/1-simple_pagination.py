@@ -6,12 +6,14 @@ import math
 from typing import List
 index_range = __import__('0-simple_helper_function').index_range
 
+
 class Server:
     """Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
+        """Constructor"""
         self.__dataset = None
 
     def dataset(self) -> List[List]:
@@ -26,12 +28,11 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-            # Use assert to verify that both arguments are integers greater than 0.
-            assert type(page) == int and type(page_size) == int
-            assert page > 0 and page_size > 0
-
-            start, end = index_range(page, page_size)
-            try:
-                 return self.dataset()[start:end]
-            except IndexError:
-                return []
+        """Get page from the dataset"""
+        assert type(page) is int and type(page_size) is int
+        assert page > 0 and page_size > 0
+        start, end = index_range(page, page_size)
+        try:
+            return self.dataset()[start:end]
+        except IndexError:
+            return []
