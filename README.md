@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Far.wikipedia.org%2Fwiki%2F%25D9%2581%25D9%2584%25D8%25A7%25D8%25B3%25D9%2583_%2528%25D8%25A5%25D8%25B7%25D8%25A7%25D8%25B1_%25D8%25B9%25D9%2585%25D9%2584_%25D9%2588%25D9%258A%25D8%25A8%2529&psig=AOvVaw03yvVYWVFpKfApFFPQV-Oh&ust=1710076156548000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDWlaGg54QDFQAAAAAdAAAAABAE" alt="FLASK" width="80"/>
+  <img src="https://miro.medium.com/v2/resize:fit:640/1*dKU4uBSnJCs4jzkkuiALoQ.png" alt="FLASK" width="200"/>
 </div>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=32&pause=1000&width=435&lines=ALX-Backend\(:)](https://git.io/typing-svg)
