@@ -63,6 +63,34 @@ flask --app [NameOFApp] run
 <br />
 
 
+## Babel Config File
+- filename: babel.cfg
+```cfg
+[python: **.py]
+[jinja2: **/templates/**.html]
+extensions=jinja2.ext.autoescape,jinja2.ext.with_
+```
+<br />
+
+## Translations
+- Initialize Your Translations
+```bash
+pybabel extract -F babel.cfg -o messages.pot .
+```
+
+- Initialize Your Dictionaries
+```bash
+pybabel init -i messages.pot -d translations -l en
+pybabel init -i messages.pot -d translations -l fr
+pybabel init -i messages.pot -d translations -l [lang]
+```
+
+- Compile Your Dictionaries
+```bash
+pybabel compile -d translations
+```
+<br />
+
 ## Authors :black_nib:
 
 * __Yousef Bakier__ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
