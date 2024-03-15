@@ -27,11 +27,13 @@ def get_user():
         return users.get(id, None)
     return None
 
+
 @app.before_request
 def before_request():
     """ Before request """
     from flask import g
     g.user = get_user()
+
 
 babel = Babel(app)
 babel.init_app(app, locale_selector=get_locale)
