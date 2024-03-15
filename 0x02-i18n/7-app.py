@@ -59,4 +59,4 @@ babel.init_app(app, locale_selector=get_locale,
 @app.route('/')
 def home():
     """ Home page """
-    return render_template('6-index.html')
+    return render_template('7-index.html')
