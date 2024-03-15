@@ -2,7 +2,10 @@
 """ Basic Babel setup """
 
 from sys import argv
-app = __import__(f'{argv[1]}-app').app
+if len(argv) > 1:
+    app = __import__(f'{argv[1]}-app').app
+else:
+    app = __import__('app').app
 
 
 if __name__ == "__main__":
